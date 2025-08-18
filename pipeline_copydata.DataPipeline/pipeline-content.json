@@ -1,0 +1,117 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "insert SampleSuperstore",
+        "type": "Copy",
+        "dependsOn": [
+          {
+            "activity": "delete SampleSuperstore",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "source": {
+            "type": "SqlServerSource",
+            "queryTimeout": "02:00:00",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "annotations": [],
+              "type": "SqlServerTable",
+              "schema": [],
+              "typeProperties": {
+                "schema": "dbo",
+                "table": "SampleSuperstore",
+                "database": "tbad_db"
+              },
+              "externalReferences": {
+                "connection": "36ec1534-ffdd-4ab4-9dc6-a2c17c3a4e15"
+              }
+            }
+          },
+          "sink": {
+            "type": "DataWarehouseSink",
+            "allowCopyCommand": true,
+            "copyCommandSettings": {},
+            "tableOption": "autoCreate",
+            "datasetSettings": {
+              "annotations": [],
+              "linkedService": {
+                "name": "DEMO-WH",
+                "properties": {
+                  "annotations": [],
+                  "type": "DataWarehouse",
+                  "typeProperties": {
+                    "endpoint": "ape3vy77q7iutiqip5hdxkntc4-gsw3bkyyod3ernoeud56k6ojgu.datawarehouse.fabric.microsoft.com",
+                    "artifactId": "9e6cde4d-fb76-45ce-b7dd-439f5a4942aa",
+                    "workspaceId": "abb0ad34-7018-48f6-b5c4-a0fbe579c935"
+                  }
+                }
+              },
+              "type": "DataWarehouseTable",
+              "schema": [],
+              "typeProperties": {
+                "schema": "dbo",
+                "table": "SampleSuperstore"
+              }
+            }
+          },
+          "enableStaging": true,
+          "translator": {
+            "type": "TabularTranslator",
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          }
+        }
+      },
+      {
+        "name": "delete SampleSuperstore",
+        "type": "Script",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "linkedService": {
+          "name": "DEMO-WH",
+          "properties": {
+            "annotations": [],
+            "type": "DataWarehouse",
+            "typeProperties": {
+              "endpoint": "ape3vy77q7iutiqip5hdxkntc4-gsw3bkyyod3ernoeud56k6ojgu.datawarehouse.fabric.microsoft.com",
+              "artifactId": "9e6cde4d-fb76-45ce-b7dd-439f5a4942aa",
+              "workspaceId": "abb0ad34-7018-48f6-b5c4-a0fbe579c935"
+            }
+          }
+        },
+        "typeProperties": {
+          "scripts": [
+            {
+              "type": "Query",
+              "text": {
+                "value": "DELETE FROM dbo.SampleSuperstore",
+                "type": "Expression"
+              }
+            }
+          ],
+          "scriptBlockExecutionTimeout": "02:00:00"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "CopyJob",
+    "displayName": "copy_SampleSuperstore"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "938cb457-6c9c-8bd4-4c36-f6cd0874212e"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":\"5.59\"}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 1,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "315f9b00c9b5caed1a92",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3d923f68d857e679de98\",\"layouts\":[{\"id\":0,\"position\":{\"x\":845.2279635258359,\"y\":469.7872340425532,\"z\":7000,\"width\":415.3191489361702,\"height\":249.9696048632219,\"tabOrder\":7000}},{\"id\":1,\"position\":{\"x\":0,\"y\":991,\"z\":7000,\"width\":323.9999999999999,\"height\":195.00702576112405,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SampleSuperstore.Category\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SampleSuperstore.Sales)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SampleSuperstore\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Category\"},\"Name\":\"SampleSuperstore.Category\",\"NativeReferenceName\":\"Category\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":0},\"Name\":\"Sum(SampleSuperstore.Sales)\",\"NativeReferenceName\":\"Sum of Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 249.97,
+          "width": 415.32,
+          "x": 845.23,
+          "y": 469.79,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"69d366cfe0c1dd767395\",\"layouts\":[{\"id\":0,\"position\":{\"x\":950.2735562310031,\"y\":0,\"z\":4000,\"width\":310.27355623100306,\"height\":179.93920972644378,\"tabOrder\":4000}},{\"id\":1,\"position\":{\"x\":0,\"y\":108,\"z\":4000,\"width\":324,\"height\":100,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(SampleSuperstore.Quantity)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SampleSuperstore\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Quantity\"}},\"Function\":0},\"Name\":\"Sum(SampleSuperstore.Quantity)\",\"NativeReferenceName\":\"Sum of Quantity\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Quantity\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 179.94,
+          "width": 310.27,
+          "x": 950.27,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"7365cde1ec592cc6fab8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":179.93920972644378,\"z\":0,\"width\":640,\"height\":289.84802431610944,\"tabOrder\":0}},{\"id\":1,\"position\":{\"x\":0,\"y\":216,\"z\":0,\"width\":324,\"height\":180,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SampleSuperstore.Customer Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SampleSuperstore.Sales)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SampleSuperstore\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Customer Name\"},\"Name\":\"SampleSuperstore.Customer Name\",\"NativeReferenceName\":\"Customer Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":0},\"Name\":\"Sum(SampleSuperstore.Sales)\",\"NativeReferenceName\":\"Sum of Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 289.85,
+          "width": 640.00,
+          "x": 0.00,
+          "y": 179.94,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"847b4598175c5b965f56\",\"layouts\":[{\"id\":0,\"position\":{\"x\":422.1276595744681,\"y\":469.7872340425532,\"z\":6000,\"width\":423.1003039513678,\"height\":249.9696048632219,\"tabOrder\":6000}},{\"id\":1,\"position\":{\"x\":0,\"y\":792,\"z\":6000,\"width\":324,\"height\":191.42068965517242,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SampleSuperstore.Region\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SampleSuperstore.Sales)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SampleSuperstore\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Region\"},\"Name\":\"SampleSuperstore.Region\",\"NativeReferenceName\":\"Region\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":0},\"Name\":\"Sum(SampleSuperstore.Sales)\",\"NativeReferenceName\":\"Sum of Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 249.97,
+          "width": 423.10,
+          "x": 422.13,
+          "y": 469.79,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"976acd1cd394f24e630f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":469.7872340425532,\"z\":5000,\"width\":422.1276595744681,\"height\":249.9696048632219,\"tabOrder\":5000}},{\"id\":1,\"position\":{\"x\":0,\"y\":592,\"z\":5000,\"width\":324,\"height\":191.8617511520737,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SampleSuperstore.Ship Mode\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SampleSuperstore.Sales)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SampleSuperstore\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Ship Mode\"},\"Name\":\"SampleSuperstore.Ship Mode\",\"NativeReferenceName\":\"Ship Mode\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":0},\"Name\":\"Sum(SampleSuperstore.Sales)\",\"NativeReferenceName\":\"Sum of Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 249.97,
+          "width": 422.13,
+          "x": 0.00,
+          "y": 469.79,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"9d017df71707e52ca3cd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":320,\"y\":0,\"z\":2000,\"width\":320,\"height\":179.93920972644378,\"tabOrder\":2000}},{\"id\":1,\"position\":{\"x\":0,\"y\":0,\"z\":2000,\"width\":158,\"height\":100,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(SampleSuperstore.Customer ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SampleSuperstore\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Customer ID\"}},\"Function\":2},\"Name\":\"Min(SampleSuperstore.Customer ID)\",\"NativeReferenceName\":\"Count of Customer ID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Customer ID\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 179.94,
+          "width": 320.00,
+          "x": 320.00,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"af74e61f99c7561145d1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":0,\"z\":3000,\"width\":310.27355623100306,\"height\":179.93920972644378,\"tabOrder\":3000}},{\"id\":1,\"position\":{\"x\":166,\"y\":0,\"z\":3000,\"width\":158,\"height\":100,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(SampleSuperstore.Sales)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SampleSuperstore\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":0},\"Name\":\"Sum(SampleSuperstore.Sales)\",\"NativeReferenceName\":\"Sum of Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 179.94,
+          "width": 310.27,
+          "x": 640.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"b575681911efe343a904\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":179.93920972644378,\"z\":1000,\"width\":620.5471124620061,\"height\":289.84802431610944,\"tabOrder\":1000}},{\"id\":1,\"position\":{\"x\":0,\"y\":404,\"z\":1000,\"width\":323.9999999999999,\"height\":180,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SampleSuperstore.Order Date\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SampleSuperstore.Sales)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SampleSuperstore\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Order Date\"},\"Name\":\"SampleSuperstore.Order Date\",\"NativeReferenceName\":\"Order Date\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":0},\"Name\":\"Sum(SampleSuperstore.Sales)\",\"NativeReferenceName\":\"Sum of Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 289.85,
+          "width": 620.55,
+          "x": 640.00,
+          "y": 179.94,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"b82568c8599374f2ed51\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":8000,\"width\":320,\"height\":179.93920972644378,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(SampleSuperstore.Row ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SampleSuperstore\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Row ID\"}},\"Function\":5},\"Name\":\"CountNonNull(SampleSuperstore.Row ID)\",\"NativeReferenceName\":\"Count of Row ID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Row ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 179.94,
+          "width": 320.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 8000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

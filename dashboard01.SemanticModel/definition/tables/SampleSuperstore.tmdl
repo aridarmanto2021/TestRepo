@@ -1,0 +1,237 @@
+table SampleSuperstore
+	lineageTag: 2d97a21e-b200-4340-9533-abd44c9d13b3
+
+	column 'Row ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2b221fa7-2d67-4047-a6c3-f12b8bf656e8
+		summarizeBy: count
+		sourceColumn: Row ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order ID'
+		dataType: string
+		lineageTag: fdec17c4-0b7c-4aa0-9d33-a997c627392f
+		summarizeBy: none
+		sourceColumn: Order ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Date'
+		dataType: string
+		lineageTag: f994dc9a-3273-47c9-ab42-45d7de05bc61
+		summarizeBy: none
+		sourceColumn: Order Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ship Date'
+		dataType: string
+		lineageTag: 1edde7df-edf8-4733-bdb1-a67bb4084f85
+		summarizeBy: none
+		sourceColumn: Ship Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ship Mode'
+		dataType: string
+		lineageTag: 580601e4-98d4-4e58-9ff8-59f6b5d6f135
+		summarizeBy: none
+		sourceColumn: Ship Mode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer ID'
+		dataType: string
+		lineageTag: fe53a8fb-1fa6-4117-9a7b-34815951451c
+		summarizeBy: none
+		sourceColumn: Customer ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Name'
+		dataType: string
+		lineageTag: 15f4ffe3-2d40-4b90-a813-163e4d264e51
+		summarizeBy: none
+		sourceColumn: Customer Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Segment
+		dataType: string
+		lineageTag: 74e83046-3216-4413-b907-c8d64fad7632
+		summarizeBy: none
+		sourceColumn: Segment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: a8185ef3-a955-44c4-85f3-3e6cc7b82499
+		summarizeBy: none
+		sourceColumn: Country
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: cb4869d5-67da-4a37-932d-0cd44324d38b
+		summarizeBy: none
+		sourceColumn: City
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column State
+		dataType: string
+		lineageTag: 29363351-bca8-4ff1-b965-629bf37b3c73
+		summarizeBy: none
+		sourceColumn: State
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Postal Code'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9acfad7c-112b-4460-9b28-d521dda25ac8
+		summarizeBy: count
+		sourceColumn: Postal Code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: c2214ed7-6133-49fc-815e-1ce3b79738cd
+		summarizeBy: none
+		sourceColumn: Region
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product ID'
+		dataType: string
+		lineageTag: acbe81f6-d3c4-4666-b12d-8d340a1cb85f
+		summarizeBy: none
+		sourceColumn: Product ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 75515aff-2338-4937-b6ff-0d35c05bcc59
+		summarizeBy: none
+		sourceColumn: Category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sub-Category
+		dataType: string
+		lineageTag: 442ed369-9093-4eda-9f5f-243a13b609e8
+		summarizeBy: none
+		sourceColumn: Sub-Category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Name'
+		dataType: string
+		lineageTag: add66117-a216-4baf-bf66-3aeecb3d5048
+		summarizeBy: none
+		sourceColumn: Product Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sales
+		dataType: double
+		lineageTag: eae6b7b6-6fe0-4d18-9c83-64f6cc1af2aa
+		summarizeBy: sum
+		sourceColumn: Sales
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: 95dcf542-2413-4f7c-8bb6-fcc08533d9f8
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Discount
+		dataType: int64
+		formatString: 0
+		lineageTag: ec71473d-a0ba-4a25-bf3a-78f5188e775b
+		summarizeBy: sum
+		sourceColumn: Discount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Profit
+		dataType: double
+		lineageTag: e86e2c8b-2d74-48f5-a50a-3c2225bcf012
+		summarizeBy: sum
+		sourceColumn: Profit
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition SampleSuperstore = m
+		mode: import
+		source =
+				let
+				    // Source = Sql.Database("192.168.90.243", "tbad_db"), // On Prem
+				    Source = Sql.Database("ape3vy77q7iutiqip5hdxkntc4-gsw3bkyyod3ernoeud56k6ojgu.datawarehouse.fabric.microsoft.com", "DEMO-WH"), // Fabric
+				    dbo_SampleSuperstore = Source{[Schema="dbo",Item="SampleSuperstore"]}[Data]
+				in
+				    dbo_SampleSuperstore
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+
