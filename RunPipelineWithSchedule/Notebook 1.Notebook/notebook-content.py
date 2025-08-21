@@ -50,6 +50,17 @@ BASEURL
 
 # CELL ********************
 
+len(BASEURL)
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
 # API endpoint
 # https://jsonplaceholder.typicode.com/posts
 # https://jsonplaceholder.typicode.com/comments
