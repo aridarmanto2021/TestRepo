@@ -1,0 +1,14 @@
+[
+  {
+    "name": "SampleSuperstore",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo/SampleSuperstore",
+        "itemId": "9e6cde4d-fb76-45ce-b7dd-439f5a4942aa",
+        "workspaceId": "abb0ad34-7018-48f6-b5c4-a0fbe579c935"
+      }
+    }
+  }
+]
