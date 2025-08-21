@@ -6,8 +6,9 @@
       "type": "OneLake",
       "oneLake": {
         "path": "Tables/dbo/SampleSuperstore",
-        "itemId": "9e6cde4d-fb76-45ce-b7dd-439f5a4942aa",
-        "workspaceId": "abb0ad34-7018-48f6-b5c4-a0fbe579c935"
+        "itemId": "5a4942aa-439f-b7dd-45ce-fb769e6cde4d",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Warehouse"
       }
     }
   }
